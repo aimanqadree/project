@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    .parent1 {
+        margin-top: 15px;
+    }
+
+    .nav1 {
+        display: flex;
+        justify-content: space-evenly;
+        /* border: 1px solid rgb(210, 208, 206); */
+        height: 40px;
+        align-items: center;
+    }
+
+    .menu {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-right: 100px
+    }
+
+    .two {
+        background-color: yellow;
+        padding: 5px;
+        border-radius: 30px;
+        border: none;
+    }
+
+    .one {
+        padding: 5px;
+        border-radius: 30px;
+        background-color: rgb(250, 239, 239);
+        border: none;
+    }
+
+    .parent2 {
+        /* border: 2px dashed blue; */
+        display: flex;
+        position: absolute;
+    }
+
+    .child2 {
+        width: 100%;
+        margin-left: 220px;
+        margin-top: 120px;
+    }
+
+    h1,
+    p,
+    .btn3 {
+        margin-bottom: 1rem;
+    }
+
+    .blank {
+        position: absolute;
+        height: 50vh;
+        width: 30vh;
+        /* border: 2px solid; */
+        background-color: rgb(228, 226, 226);
+        margin-right: 50px;
+        left: 570px;
+        top: 50px;
+    }
+
+    .img1 img {
+        position: absolute;
+        margin-left: 70px;
+    }
+
+    #one {
+        height: 54px;
+    }
+    li{
+        list-style: none;
+    }
+
+    #two,
+    #four {
+        height: 70vh;
+    }
+
+    #three ul {
+        display: flex;
+        justify-content: space-evenly;
+        /* border: 1px solid; */
+        align-items: center;
+    }
+
+    .child4 {
+        /* border: 1px solid red; */
+        justify-content: center;
+        margin: 40px;
+        width: 20vw;
+        text-align: center;
+        height: 470px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    h2,p {
+        margin: 1.5rem 0;
+    }
+
+    h2 {
+        text-align: center;
+    
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .parent5 {
+        display: flex;
+        margin-top: 140px;
+        justify-content: space-evenly;
+        /* position: relative; */
+        background-color: white;
+    }
+
+    .gallery {
+        position: relative;
+    }
+
+    .image5 {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+        height: 150px;
+        width: 200px;
+        /* border: 1px solid black; */
+        background: grey;
+        opacity: 0.2;
+    }
+
+    .image6 img {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+    }
+
+    .image7 img {
+        position: absolute;
+        top: 6rem;
+        left: 6rem;
+    }
+   
+
+    /* .image5{
+    height: 150px;
+    width: 200px;
+    border: ;
+} */
+</style>
+
+<body>
+    <section id="one">
+        <div class="parent1">
+            <nav class="nav1">
+                <i class="fa fa-youtube-play" style="margin-right: 600px;">Youtube Video Creator</i>
+                <ul class="menu">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Page</li>
+                    <li>Team</li>
+                    <li>Blog</li>
+                </ul>
+                
+                <div class="btn1">
+                    <button class="one">Last Video</button>
+                </div>
+                <div class="btn2">
+                    <button class="two">Subscribe</button>
+                
+            </div>
+            </nav>
+        </div>
+    </section>
+    <section id="two">
+        <div class="parent2">
+            <div class="child2">
+                <h1>An YouTube<br> Channel for <br> entrepreneurs</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur <br>
+                    adipisicing elit. Exercitationem </p>
+
+                <div class="btn3">
+                    <button class="two">Subscribe</button>
+                    <button class="one">Last Video</button>
+                </div>
+            </div>
+            <div class="blank"></div>
+            <div class="img1"><img src="assets/image1.avif" alt="image not found"
+                    style="height: 300px; width: 200px; margin-top: 60px;"></div>
+        </div>
+    </section>
+    <section id="three">
+        <div class="parent3">
+            <nav class="child3">
+
+                <ul>
+                    <li>
+                        <h4>Video available at</h4>
+                    </li>
+                    <li><i class="fa fa-youtube-play" style="font: size 32px; color: red;"></i>YouTube</li>
+                    <li>
+                        <h2 style="background-color: blueviolet; color: white;">twitch</h2>
+                    </li>
+                    <li>
+                        <h2 style="color: rgb(9,94,221);">facebook</h2>
+                    </li>
+                    <li>
+                        <h2 style="color: rgb(55,22,174);">webflow</h2>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section id="five">
+        <div class="parent5">
+            <div class="gallery">
+                <div class="image5"></div>
+                <div class="image6"><img src="assets/imagecamera.avif" style="height: 150px; width: 200px;"
+                        alt="image not found"></div>
+                <div class="image7"><img src="assets/image cameraman.avif" style="height: 150px; width: 200px;"
+                        alt="image not found"></div>
+            </div>
+            <div class="about">
+                <h2>About the show</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Aut delectus quasi molestiae quisquam
+                    iste,<br> nam quae officiis asperiores quod nesciunt in, explicabo <br>suscipit iusto quis
+                    doloremque est? Pariatur, eveniet harum!</p>
+                <ul>
+                    <li>Created for users</li>
+                    <li>Main Videos</li>
+                    <li>Interview with famous guests</li>
+                </ul>
+                <br>
+                <br>
+                <button class="one">Learn More<button>
+
+            </div>
+        </div>
+
+    </section>
+    <section id="four">
+        <div class="parent4">
+            <h2>Recent Episodes</h2>
+            <div class="cards">
+                <div class="child4">
+                    <img src="assets/image studio.avif" style="height: 250px; width: 270px; border-radius: 10px;"
+                        alt="image not found">
+                    <h2>video:6 Learn more about marketing </h2>
+                    <p>Lorem ipsum dolor sit amet consect. Mollitia nemo repudiandae itaque atque.</p>
+                    <i class="fa fa-play-circle">WatchNow</i>
+                </div>
+                <div class="child4">
+                    <img src="assets/imagecamera.avif" style="height: 250px; width: 270px;border-radius: 10px;"
+                        alt="image not found">
+                    <h2>Video:6 How to present <br> yourself in social media</h2>
+                    <p>Lorem ipsum dolor sit amet consect. Mollitia nemo repudiandae itaque atque</p>
+                    <i class="fa fa-play-circle">WatchNow</i>
+                </div>
+                <div class="child4">
+                    <img src="assets/imageaction.avif" style="height: 250px; width: 270px;border-radius: 10px;"
+                        alt="image not found">
+                    <h2>video:6 Learn more about marketing </h2>
+                    <p>Lorem ipsum dolor sit amet consect. Mollitia nemo repudiandae itaque atque.</p>
+                    <i class="fa fa-play-circle">WatchNow</i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
